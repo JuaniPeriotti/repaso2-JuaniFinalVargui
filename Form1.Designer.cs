@@ -29,24 +29,37 @@
         private void InitializeComponent()
         {
             this.cbGustos = new System.Windows.Forms.ComboBox();
+            this.cbTipos = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cbGustos
             // 
+            this.cbGustos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGustos.FormattingEnabled = true;
             this.cbGustos.Location = new System.Drawing.Point(12, 12);
             this.cbGustos.Name = "cbGustos";
-            this.cbGustos.Size = new System.Drawing.Size(208, 21);
+            this.cbGustos.Size = new System.Drawing.Size(175, 21);
             this.cbGustos.TabIndex = 0;
+            // 
+            // cbTipos
+            // 
+            this.cbTipos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTipos.FormattingEnabled = true;
+            this.cbTipos.Location = new System.Drawing.Point(214, 12);
+            this.cbTipos.Name = "cbTipos";
+            this.cbTipos.Size = new System.Drawing.Size(121, 21);
+            this.cbTipos.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 450);
+            this.ClientSize = new System.Drawing.Size(347, 282);
+            this.Controls.Add(this.cbTipos);
             this.Controls.Add(this.cbGustos);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -54,6 +67,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbGustos;
+        private System.Windows.Forms.ComboBox cbTipos;
     }
 }
 

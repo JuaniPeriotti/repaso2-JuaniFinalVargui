@@ -34,7 +34,7 @@ namespace repaso2_JuaniFinalVargui
             {
 
                 MessageBox.Show("Error al cerrar la conexión: " + ex.Message);
-
+    
             }
         }
 
